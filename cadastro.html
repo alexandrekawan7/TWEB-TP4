@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <picture class="logo-container">
+            <img src="logo.svg">
+        </picture>
+        <div class="form-container">
+            <h1>Cadastrar-se</h1>
+
+            <form id="signup-form" action="" method="get">
+                <fieldset>
+                    <legend>Informações pessoais</legend>
+
+                    <label for="nome-input">Nome completo:</label>
+                    <input id="nome-input" type="text" placeholder="Digite o seu nome completo">
+
+                    <label for="username-input">Nome de Usuário:</label>
+                    <input id="username-input" type="text" placeholder="Digite o seu nome de usuário">
+
+                    <label for="password-input">Senha:</label>
+                    <input id="password-input" type="password" placeholder="Digite a sua senha">
+
+                    <label for="repeat-password-input">Repita a sua senha:</label>
+                    <input id="repeat-password-input" type="password" placeholder="Digite a sua senha novamente">
+
+                    <label for="birthday-input">Data de nascimento:</label>
+                    <input type="date" id="birthday-input">
+
+
+                    <fieldset>
+                        <legend>Selecione seu sexo:</legend>
+
+                        <input type="radio" id="male-sex" name="sex-input" value="Masculino">
+                        <label for="male-sex">Masculino</label>
+                        <input type="radio" id="female-sex" name="sex-input" value="Feminino">
+                        <label for="female-sex">Feminino</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações Acadêmicas</legend>
+
+                    <label for="course-select">Curso:</label>
+                    <select id="course-select" form="signup-form">
+                        <option value="Sistemas de Informação">Sistemas de Informação</option>
+                        <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                        <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                        <option value="Engenharia Mecatrônica">Engenharia Mecatrônica</option>
+                        <option value="Matemática">Matemática</option>
+                        <option value="Física">Física</option>
+                    </select>
+
+                    <label for="semester-input">Semestre:</label>
+                    <input type="number" id="semester-input" min="1" max="10">
+                </fieldset>
+
+                <input type="checkbox" name="remember-input" id="remember-input">
+                <label for="remember-input">Lembre-se de mim</label>
+
+                <input type="submit" name="Cadastrar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
