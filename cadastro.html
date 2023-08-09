@@ -35,38 +35,47 @@
                     <label for="birthday-input">Data de nascimento:</label>
                     <input type="date" id="birthday-input">
 
-
-                    <fieldset>
-                        <legend>Selecione seu sexo:</legend>
-
-                        <input type="radio" id="male-sex" name="sex-input" value="Masculino">
-                        <label for="male-sex">Masculino</label>
-                        <input type="radio" id="female-sex" name="sex-input" value="Feminino">
-                        <label for="female-sex">Feminino</label>
-                    </fieldset>
                 </fieldset>
 
                 <fieldset>
+                    <legend>Selecione seu sexo:</legend>
+
+                    <input type="radio" id="male-sex" name="sex-input" value="Masculino">
+                    <label for="male-sex">Masculino</label>
+                    <input type="radio" id="female-sex" name="sex-input" value="Feminino">
+                    <label for="female-sex">Feminino</label>
+                </fieldset>
+
+                <fieldset id="academic-fieldset">
                     <legend>Informações Acadêmicas</legend>
 
-                    <label for="course-select">Curso:</label>
-                    <select id="course-select" form="signup-form">
-                        <option value="Sistemas de Informação">Sistemas de Informação</option>
-                        <option value="Engenharia Mecânica">Engenharia Mecânica</option>
-                        <option value="Engenharia Elétrica">Engenharia Elétrica</option>
-                        <option value="Engenharia Mecatrônica">Engenharia Mecatrônica</option>
-                        <option value="Matemática">Matemática</option>
-                        <option value="Física">Física</option>
-                    </select>
-
-                    <label for="semester-input">Semestre:</label>
-                    <input type="number" id="semester-input" min="1" max="10">
+                    <div class="apart">
+                        <div>
+                            <label for="course-select">Curso:</label>
+                                <select id="course-select" form="signup-form">
+                                <option value="Sistemas de Informação">Sistemas de Informação</option>
+                                <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                                <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                                <option value="Engenharia Mecatrônica">Engenharia Mecatrônica</option>
+                                <option value="Matemática">Matemática</option>
+                                <option value="Física">Física</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="semester-input">Semestre:</label>
+                            <input type="number" id="semester-input" min="1" max="10">
+                        </div>
+                    </div>
+                    
                 </fieldset>
 
                 <input type="checkbox" name="remember-input" id="remember-input">
                 <label for="remember-input">Lembre-se de mim</label>
 
-                <input type="submit" name="Cadastrar">
+                <footer>
+                    <input type="submit" name="Cadastrar">
+                </footer>
             </form>
         </div>
     </main>
