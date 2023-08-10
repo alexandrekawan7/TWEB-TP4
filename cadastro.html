@@ -26,25 +26,40 @@
                     <label for="username-input">Nome de Usuário:</label>
                     <input id="username-input" type="text" placeholder="Digite o seu nome de usuário">
 
-                    <label for="password-input">Senha:</label>
-                    <input id="password-input" type="password" placeholder="Digite a sua senha">
+                    <div class="divided-camps">
+                        <div>
+                            <label for="password-input">Senha:</label><br>
+                            <input id="password-input" type="password" placeholder="Digite a sua senha">
+                        </div>
 
-                    <label for="repeat-password-input">Repita a sua senha:</label>
-                    <input id="repeat-password-input" type="password" placeholder="Digite a sua senha novamente">
+                        <div>
+                            <label for="repeat-password-input">Repita a sua senha:</label><br>
+                            <input id="repeat-password-input" type="password" placeholder="Digite a sua senha novamente">
+                        </div>
+                    </div>
 
-                    <label for="birthday-input">Data de nascimento:</label>
-                    <input type="date" id="birthday-input">
+                    <div class="divided-camps">
+                        <fieldset id="bottom-camp-first">
+                            <legend>Selecione seu sexo:</legend>
+        
+                            <input type="radio" id="male-sex" name="sex-input" value="Masculino">
+                            <label for="male-sex">Masculino</label>
+                            <input type="radio" id="female-sex" name="sex-input" value="Feminino">
+                            <label for="female-sex">Feminino</label>
+                        </fieldset>
+
+                        <div id="bottom-camp-second">
+                            <label for="birthday-input">Data de nascimento:</label><br>
+                            <input type="date" id="birthday-input">
+                        </div>
+                        
+                    </div>
+
+                    
 
                 </fieldset>
 
-                <fieldset>
-                    <legend>Selecione seu sexo:</legend>
-
-                    <input type="radio" id="male-sex" name="sex-input" value="Masculino">
-                    <label for="male-sex">Masculino</label>
-                    <input type="radio" id="female-sex" name="sex-input" value="Feminino">
-                    <label for="female-sex">Feminino</label>
-                </fieldset>
+                
 
                 <fieldset id="academic-fieldset">
                     <legend>Informações Acadêmicas</legend>
@@ -52,6 +67,7 @@
                     <div class="apart">
                         <div>
                             <label for="course-select">Curso:</label>
+                            <br>
                                 <select id="course-select" form="signup-form">
                                 <option value="Sistemas de Informação">Sistemas de Informação</option>
                                 <option value="Engenharia Mecânica">Engenharia Mecânica</option>
@@ -64,6 +80,7 @@
                         
                         <div>
                             <label for="semester-input">Semestre:</label>
+                            <br>
                             <input type="number" id="semester-input" min="1" max="10">
                         </div>
                     </div>

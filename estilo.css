@@ -58,11 +58,11 @@ label {
 }
 
 form {
-    width: 25vw;
+    width: 28vw;
     height: 80%;
 }
 
-input {
+input, select {
     margin-bottom: 1vh;
 }
 
@@ -70,14 +70,19 @@ input[type="text"], input[type="password"], input[type="email"] {
     display: block;
 }
 
-input[type="text"], input[type="password"], input[type="email"] {
-    width: 90%;
+input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
     height: 3vh;
+    width: 100%;
+}
+
+input[type="date"] {
+    width: 42.2%;
 }
 
 input, select {
     font-family: 'Open Sans';
     font-size: medium;
+    border: none;
     border-color: transparent;
     border-radius: 5px;
 }
@@ -107,6 +112,22 @@ input[type="submit"] {
     color: white;
     font-weight: bolder;
     box-shadow: none;
+}
+
+.divided-camps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#password-input, #repeat-password-input {
+    width: 127%;
+}
+
+#bottom-camp-first {
+    border-radius: 5px;
+    width: 46.5%;
 }
 
 footer {
