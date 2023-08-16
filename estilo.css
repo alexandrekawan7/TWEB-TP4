@@ -66,8 +66,13 @@ form {
     height: 80%;
 }
 
+label {
+    font-weight: 500;
+}
+
 input, select {
     margin-bottom: 1vh;
+    font-weight: 500;
 }
 
 input[type="text"], input[type="password"], input[type="email"] {
@@ -76,7 +81,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 
 input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
     height: 3vh;
-    width: 100%;
+    width: 99%;
 }
 
 input[type="date"] {
@@ -124,17 +129,33 @@ input[type="submit"] {
     width: 90%;
 }
 
+.divided-camps2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+    width: 90%;
+}
+
 #password-input, #repeat-password-input {
-    width: 127%;
+    width: 122.5%;
 }
 
 #bottom-camp-first {
     border-radius: 5px;
-    width: 46.5%;
+    width: 47.8%;
 }
 
 #bottom-camp-second {
-    width: 41%;
+    width: 43.5%;
+}
+
+#course-select {
+    width: 18vw;
+}
+
+#semester-input {
+    width: 4.5vw;
 }
 
 footer {
