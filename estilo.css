@@ -41,6 +41,10 @@ main {
     height: 75vh;
 }
 
+fieldset {
+    border-radius: 5px;
+}
+
 label {
     display: inline-block;
     margin-bottom: 5px;
@@ -76,7 +80,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="dat
 }
 
 input[type="date"] {
-    width: 42.2%;
+    width: 70%;
 }
 
 input, select {
@@ -93,8 +97,7 @@ fieldset {
 
 .apart {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 3.5vw;
     max-width: 22.8vw;
 }
 
@@ -128,6 +131,10 @@ input[type="submit"] {
 #bottom-camp-first {
     border-radius: 5px;
     width: 46.5%;
+}
+
+#bottom-camp-second {
+    width: 41%;
 }
 
 footer {
